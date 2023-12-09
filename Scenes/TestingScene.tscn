@@ -1,0 +1,34 @@
+[gd_scene load_steps=7 format=3 uid="uid://c40wko4ci5o2c"]
+
+[ext_resource type="Script" path="res://Scripts/TestingScene.gd" id="1"]
+[ext_resource type="PackedScene" uid="uid://tvv4c4t70als" path="res://Scenes/CreatedBoard.tscn" id="2"]
+[ext_resource type="PackedScene" uid="uid://dyjl1yr05h7el" path="res://Scenes/Characters/Ally.tscn" id="3"]
+[ext_resource type="PackedScene" uid="uid://dfo5cnkccgf35" path="res://Scenes/Characters/Enemy.tscn" id="4"]
+[ext_resource type="Script" path="res://Scripts/CameraControl.gd" id="5"]
+
+[sub_resource type="Environment" id="Environment_rrrfw"]
+ambient_light_source = 2
+ambient_light_color = Color(1, 1, 1, 1)
+
+[node name="Main" type="Node3D"]
+script = ExtResource("1")
+
+[node name="CreatedBoard" parent="." instance=ExtResource("2")]
+
+[node name="NorthMarker" type="Label3D" parent="."]
+transform = Transform3D(14.3619, 0, 0, 0, 0.723305, 0.690529, 0, -9.9173, 10.388, 0, 0, -14.6248)
+text = "NORTH"
+
+[node name="Enemy" parent="." instance=ExtResource("4")]
+transform = Transform3D(0.705248, 0, 0, 0, 0.705248, 0, 0, 0, 0.734895, -6.0607, 1.56894, -5.22703)
+
+[node name="Ally" parent="." instance=ExtResource("3")]
+
+[node name="CameraReference" type="Node3D" parent="."]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.652112, 0.758123, 0, -0.758123, 0.652112, 0, 17.8291, 10.8643)
+script = ExtResource("5")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_rrrfw")

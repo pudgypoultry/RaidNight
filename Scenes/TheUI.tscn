@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://ArtResources/BottomUIBar.png" type="Texture2D" id=1]
+
+[node name="TheUI" type="MarginContainer"]
+offset_top = 27.0
+offset_right = 1600.0
+offset_bottom = 927.0
+scale = Vector2( 0.64, 0.64 )
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 1600.0
+offset_bottom = 900.0
+texture = ExtResource( 1 )

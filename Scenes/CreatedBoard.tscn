@@ -1,0 +1,976 @@
+[gd_scene load_steps=3 format=3 uid="uid://tvv4c4t70als"]
+
+[ext_resource type="Script" path="res://Scripts/HexBoard.gd" id="1"]
+[ext_resource type="PackedScene" uid="uid://dma3fnlgq4vsr" path="res://Scenes/BasicHex.tscn" id="2"]
+
+[node name="CreatedBoard" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0412083, 0, -0.00495338)
+script = ExtResource("1")
+
+[node name="BasicHex" parent="." instance=ExtResource("2")]
+
+[node name="BasicHex2" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0, 0.866)
+q = 1
+s = -1
+
+[node name="BasicHex3" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.732)
+r = 1
+s = -1
+
+[node name="BasicHex4" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.21133e-05, 0, -1.73204)
+r = -1
+s = 1
+
+[node name="BasicHex5" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.49996, 0, -0.866)
+q = 1
+r = -1
+
+[node name="BasicHex6" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.49998, 0, 0.866038)
+q = -1
+r = 1
+
+[node name="BasicHex7" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.49996, 0, -0.866)
+q = -1
+s = 1
+
+[node name="BasicHex8" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 5.196)
+r = 3
+s = -3
+
+[node name="BasicHex9" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0, 6.062)
+q = 1
+r = 3
+s = -4
+
+[node name="BasicHex10" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 6.928)
+r = 4
+s = -4
+
+[node name="BasicHex11" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.21133e-05, 0, 3.46396)
+r = 2
+s = -2
+
+[node name="BasicHex12" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.49996, 0, 4.33)
+q = 1
+r = 2
+s = -3
+
+[node name="BasicHex13" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.49998, 0, 6.06204)
+q = -1
+r = 4
+s = -3
+
+[node name="BasicHex14" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.49996, 0, 4.33)
+q = -1
+r = 3
+s = -2
+
+[node name="BasicHex15" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5.196)
+r = -3
+s = 3
+
+[node name="BasicHex16" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0, -4.33)
+q = 1
+r = -3
+s = 2
+
+[node name="BasicHex17" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3.464)
+r = -2
+s = 2
+
+[node name="BasicHex18" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.21133e-05, 0, -6.92804)
+r = -4
+s = 4
+
+[node name="BasicHex19" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.49996, 0, -6.062)
+q = 1
+r = -4
+s = 3
+
+[node name="BasicHex20" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.49998, 0, -4.32996)
+q = -1
+r = -2
+s = 3
+
+[node name="BasicHex21" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.49996, 0, -6.062)
+q = -1
+r = -3
+s = 4
+
+[node name="BasicHex22" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 10.392)
+r = 6
+s = -6
+
+[node name="BasicHex23" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0, 11.258)
+q = 1
+r = 6
+s = -7
+
+[node name="BasicHex24" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 12.124)
+r = 7
+s = -7
+
+[node name="BasicHex25" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.21133e-05, 0, 8.65996)
+r = 5
+s = -5
+
+[node name="BasicHex26" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.49996, 0, 9.526)
+q = 1
+r = 5
+s = -6
+
+[node name="BasicHex27" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.49998, 0, 11.258)
+q = -1
+r = 7
+s = -6
+
+[node name="BasicHex28" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.49996, 0, 9.526)
+q = -1
+r = 6
+s = -5
+
+[node name="BasicHex29" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -10.392)
+r = -6
+s = 6
+
+[node name="BasicHex30" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0, -9.526)
+q = 1
+r = -6
+s = 5
+
+[node name="BasicHex31" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -8.66)
+r = -5
+s = 5
+
+[node name="BasicHex32" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.21133e-05, 0, -12.124)
+r = -7
+s = 7
+
+[node name="BasicHex33" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.49996, 0, -11.258)
+q = 1
+r = -7
+s = 6
+
+[node name="BasicHex34" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.49998, 0, -9.52596)
+q = -1
+r = -5
+s = 6
+
+[node name="BasicHex35" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.49996, 0, -11.258)
+q = -1
+r = -6
+s = 7
+
+[node name="BasicHex36" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.50002, 0, -2.59804)
+q = -1
+r = -1
+s = 2
+
+[node name="BasicHex37" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.50002, 0, 2.59796)
+q = -1
+r = 2
+s = -1
+
+[node name="BasicHex38" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.50002, 0, -7.79404)
+q = -1
+r = -4
+s = 5
+
+[node name="BasicHex39" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.50002, 0, 7.79396)
+q = -1
+r = 5
+s = -4
+
+[node name="BasicHex40" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.49998, 0, -2.59804)
+q = 1
+r = -2
+s = 1
+
+[node name="BasicHex41" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.49998, 0, 2.59796)
+q = 1
+r = 1
+s = -2
+
+[node name="BasicHex42" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.49998, 0, -7.79404)
+q = 1
+r = -5
+s = 4
+
+[node name="BasicHex43" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.49998, 0, 7.79396)
+q = 1
+r = 4
+s = -5
+
+[node name="BasicHex44" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 0)
+q = -2
+r = 1
+s = 1
+
+[node name="BasicHex45" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 1.732)
+q = -2
+r = 2
+
+[node name="BasicHex46" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.00002, 0, -1.73204)
+q = -2
+s = 2
+
+[node name="BasicHex47" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 5.196)
+q = -2
+r = 4
+s = -2
+
+[node name="BasicHex48" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 6.928)
+q = -2
+r = 5
+s = -3
+
+[node name="BasicHex49" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.00002, 0, 3.46396)
+q = -2
+r = 3
+s = -1
+
+[node name="BasicHex50" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, -5.196)
+q = -2
+r = -2
+s = 4
+
+[node name="BasicHex51" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, -3.464)
+q = -2
+r = -1
+s = 3
+
+[node name="BasicHex52" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.00002, 0, -6.92804)
+q = -2
+r = -3
+s = 5
+
+[node name="BasicHex53" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 10.392)
+q = -2
+r = 7
+s = -5
+
+[node name="BasicHex54" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.00002, 0, 8.65996)
+q = -2
+r = 6
+s = -4
+
+[node name="BasicHex55" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, -10.392)
+q = -2
+r = -5
+s = 7
+
+[node name="BasicHex56" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, -8.66)
+q = -2
+r = -4
+s = 6
+
+[node name="BasicHex59" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.49998, 0, 6.06204)
+q = -3
+r = 5
+s = -2
+
+[node name="BasicHex60" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.49996, 0, 4.33)
+q = -3
+r = 4
+s = -1
+
+[node name="BasicHex62" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.49996, 0, -6.062)
+q = -3
+r = -2
+s = 5
+
+[node name="BasicHex63" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.49996, 0, 9.526)
+q = -3
+r = 7
+s = -4
+
+[node name="BasicHex64" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.49998, 0, -9.52596)
+q = -3
+r = -4
+s = 7
+
+[node name="BasicHex67" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.50002, 0, -7.79404)
+q = -3
+r = -3
+s = 6
+
+[node name="BasicHex68" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.50002, 0, 7.79396)
+q = -3
+r = 6
+s = -3
+
+[node name="BasicHex69" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 0)
+q = -4
+r = 2
+s = 2
+
+[node name="BasicHex70" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 1.732)
+q = -4
+r = 3
+s = 1
+
+[node name="BasicHex71" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.00002, 0, -1.73204)
+q = -4
+r = 1
+s = 3
+
+[node name="BasicHex72" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 5.196)
+q = -4
+r = 5
+s = -1
+
+[node name="BasicHex73" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, 6.928)
+q = -4
+r = 6
+s = -2
+
+[node name="BasicHex74" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.00002, 0, 3.46396)
+q = -4
+r = 4
+
+[node name="BasicHex75" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, -5.196)
+q = -4
+r = -1
+s = 5
+
+[node name="BasicHex76" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, -3.464)
+q = -4
+s = 4
+
+[node name="BasicHex77" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.00002, 0, -6.92804)
+q = -4
+r = -2
+s = 6
+
+[node name="BasicHex78" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.00002, 0, 8.65996)
+q = -4
+r = 7
+s = -3
+
+[node name="BasicHex79" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, -8.66)
+q = -4
+r = -3
+s = 7
+
+[node name="BasicHex80" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.49998, 0, 0.866038)
+q = -5
+r = 3
+s = 2
+
+[node name="BasicHex81" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.49996, 0, -0.866)
+q = -5
+r = 2
+s = 3
+
+[node name="BasicHex82" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.49998, 0, 6.06204)
+q = -5
+r = 6
+s = -1
+
+[node name="BasicHex83" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.49996, 0, 4.33)
+q = -5
+r = 5
+
+[node name="BasicHex84" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.49998, 0, -4.32996)
+q = -5
+s = 5
+
+[node name="BasicHex85" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.49996, 0, -6.062)
+q = -5
+r = -1
+s = 6
+
+[node name="BasicHex86" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.50002, 0, -2.59804)
+q = -5
+r = 1
+s = 4
+
+[node name="BasicHex87" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.50002, 0, 2.59796)
+q = -5
+r = 4
+s = 1
+
+[node name="BasicHex88" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.50002, 0, -7.79404)
+q = -5
+r = -2
+s = 7
+
+[node name="BasicHex89" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.50002, 0, 7.79396)
+q = -5
+r = 7
+s = -2
+
+[node name="BasicHex90" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, 0)
+q = -6
+r = 3
+s = 3
+
+[node name="BasicHex91" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, 1.732)
+q = -6
+r = 4
+s = 2
+
+[node name="BasicHex92" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.00002, 0, -1.73204)
+q = -6
+r = 2
+s = 4
+
+[node name="BasicHex93" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, 5.196)
+q = -6
+r = 6
+
+[node name="BasicHex94" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, 6.928)
+q = -6
+r = 7
+s = -1
+
+[node name="BasicHex95" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.00002, 0, 3.46396)
+q = -6
+r = 5
+s = 1
+
+[node name="BasicHex96" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, -5.196)
+q = -6
+s = 6
+
+[node name="BasicHex97" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, -3.464)
+q = -6
+r = 1
+s = 5
+
+[node name="BasicHex98" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.00002, 0, -6.92804)
+q = -6
+r = -1
+s = 7
+
+[node name="BasicHex99" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, 0, 0.866038)
+q = -7
+r = 4
+s = 3
+
+[node name="BasicHex100" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, 0, -0.866)
+q = -7
+r = 3
+s = 4
+
+[node name="BasicHex101" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, 0, 6.06204)
+q = -7
+r = 7
+
+[node name="BasicHex102" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, 0, 4.33)
+q = -7
+r = 6
+s = 1
+
+[node name="BasicHex103" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, 0, -4.32996)
+q = -7
+r = 1
+s = 6
+
+[node name="BasicHex104" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, 0, -6.062)
+q = -7
+s = 7
+
+[node name="BasicHex105" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, 0, -2.59804)
+q = -7
+r = 2
+s = 5
+
+[node name="BasicHex106" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5, 0, 2.59796)
+q = -7
+r = 5
+s = 2
+
+[node name="BasicHex107" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -2.62268e-07)
+q = 2
+r = -1
+s = -1
+
+[node name="BasicHex108" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -1.732)
+q = 2
+r = -2
+
+[node name="BasicHex109" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.00002, 0, 1.73204)
+q = 2
+s = -2
+
+[node name="BasicHex110" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -5.196)
+q = 2
+r = -4
+s = 2
+
+[node name="BasicHex111" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -6.928)
+q = 2
+r = -5
+s = 3
+
+[node name="BasicHex112" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.00002, 0, -3.46396)
+q = 2
+r = -3
+s = 1
+
+[node name="BasicHex113" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 5.196)
+q = 2
+r = 2
+s = -4
+
+[node name="BasicHex114" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 3.464)
+q = 2
+r = 1
+s = -3
+
+[node name="BasicHex115" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.00002, 0, 6.92804)
+q = 2
+r = 3
+s = -5
+
+[node name="BasicHex116" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -10.392)
+q = 2
+r = -7
+s = 5
+
+[node name="BasicHex117" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.00002, 0, -8.65996)
+q = 2
+r = -6
+s = 4
+
+[node name="BasicHex118" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 10.392)
+q = 2
+r = 5
+s = -7
+
+[node name="BasicHex119" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 8.66)
+q = 2
+r = 4
+s = -6
+
+[node name="BasicHex120" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.49998, 0, -0.866039)
+q = 3
+r = -2
+s = -1
+
+[node name="BasicHex121" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.49996, 0, 0.866)
+q = 3
+r = -1
+s = -2
+
+[node name="BasicHex122" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.49998, 0, -6.06204)
+q = 3
+r = -5
+s = 2
+
+[node name="BasicHex123" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.49996, 0, -4.33)
+q = 3
+r = -4
+s = 1
+
+[node name="BasicHex124" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.49998, 0, 4.32996)
+q = 3
+r = 1
+s = -4
+
+[node name="BasicHex125" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.49996, 0, 6.062)
+q = 3
+r = 2
+s = -5
+
+[node name="BasicHex126" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.49996, 0, -9.526)
+q = 3
+r = -7
+s = 4
+
+[node name="BasicHex127" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.49998, 0, 9.52596)
+q = 3
+r = 4
+s = -7
+
+[node name="BasicHex128" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.50002, 0, 2.59804)
+q = 3
+s = -3
+
+[node name="BasicHex129" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.50002, 0, -2.59796)
+q = 3
+r = -3
+
+[node name="BasicHex130" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.50002, 0, 7.79404)
+q = 3
+r = 3
+s = -6
+
+[node name="BasicHex131" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.50002, 0, -7.79396)
+q = 3
+r = -6
+s = 3
+
+[node name="BasicHex132" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -5.24537e-07)
+q = 4
+r = -2
+s = -2
+
+[node name="BasicHex133" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -1.732)
+q = 4
+r = -3
+s = -1
+
+[node name="BasicHex134" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.00002, 0, 1.73204)
+q = 4
+r = -1
+s = -3
+
+[node name="BasicHex135" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -5.196)
+q = 4
+r = -5
+s = 1
+
+[node name="BasicHex136" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -6.928)
+q = 4
+r = -6
+s = 2
+
+[node name="BasicHex137" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.00002, 0, -3.46396)
+q = 4
+r = -4
+
+[node name="BasicHex138" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 5.196)
+q = 4
+r = 1
+s = -5
+
+[node name="BasicHex139" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 3.464)
+q = 4
+s = -4
+
+[node name="BasicHex140" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.00002, 0, 6.92804)
+q = 4
+r = 2
+s = -6
+
+[node name="BasicHex141" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.00002, 0, -8.65996)
+q = 4
+r = -7
+s = 3
+
+[node name="BasicHex142" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 8.66)
+q = 4
+r = 3
+s = -7
+
+[node name="BasicHex143" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.49998, 0, -0.866039)
+q = 5
+r = -3
+s = -2
+
+[node name="BasicHex144" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.49996, 0, 0.865999)
+q = 5
+r = -2
+s = -3
+
+[node name="BasicHex145" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.49998, 0, -6.06204)
+q = 5
+r = -6
+s = 1
+
+[node name="BasicHex146" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.49996, 0, -4.33)
+q = 5
+r = -5
+
+[node name="BasicHex147" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.49998, 0, 4.32996)
+q = 5
+s = -5
+
+[node name="BasicHex148" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.49996, 0, 6.062)
+q = 5
+r = 1
+s = -6
+
+[node name="BasicHex149" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.50002, 0, 2.59804)
+q = 5
+r = -1
+s = -4
+
+[node name="BasicHex150" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.50002, 0, -2.59796)
+q = 5
+r = -4
+s = -1
+
+[node name="BasicHex151" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.50002, 0, 7.79404)
+q = 5
+r = 2
+s = -7
+
+[node name="BasicHex152" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.50002, 0, -7.79396)
+q = 5
+r = -7
+s = 2
+
+[node name="BasicHex153" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, -7.86805e-07)
+q = 6
+r = -3
+s = -3
+
+[node name="BasicHex154" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, -1.732)
+q = 6
+r = -4
+s = -2
+
+[node name="BasicHex155" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.00002, 0, 1.73204)
+q = 6
+r = -2
+s = -4
+
+[node name="BasicHex156" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, -5.196)
+q = 6
+r = -6
+
+[node name="BasicHex157" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, -6.928)
+q = 6
+r = -7
+s = 1
+
+[node name="BasicHex158" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.00002, 0, -3.46396)
+q = 6
+r = -5
+s = -1
+
+[node name="BasicHex159" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 5.196)
+q = 6
+s = -6
+
+[node name="BasicHex160" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 3.464)
+q = 6
+r = -1
+s = -5
+
+[node name="BasicHex161" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.00002, 0, 6.92804)
+q = 6
+r = 1
+s = -7
+
+[node name="BasicHex162" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.5, 0, -0.866039)
+q = 7
+r = -4
+s = -3
+
+[node name="BasicHex163" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.5, 0, 0.865999)
+q = 7
+r = -3
+s = -4
+
+[node name="BasicHex164" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.5, 0, -6.06204)
+q = 7
+r = -7
+
+[node name="BasicHex165" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.5, 0, -4.33)
+q = 7
+r = -6
+s = -1
+
+[node name="BasicHex166" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.5, 0, 4.32996)
+q = 7
+r = -1
+s = -6
+
+[node name="BasicHex167" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.5, 0, 6.062)
+q = 7
+s = -7
+
+[node name="BasicHex168" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.5, 0, 2.59804)
+q = 7
+r = -2
+s = -5
+
+[node name="BasicHex169" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.5, 0, -2.59796)
+q = 7
+r = -5
+s = -2
+
+[node name="BasicHex57" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.49998, 0, 0.866038)
+q = -3
+r = 2
+s = 1
+
+[node name="BasicHex58" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.49996, 0, -0.866)
+q = -3
+r = 1
+s = 2
+
+[node name="BasicHex61" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.49998, 0, -4.32996)
+q = -3
+r = -1
+s = 4
+
+[node name="BasicHex65" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.50002, 0, -2.59804)
+q = -3
+s = 3
+
+[node name="BasicHex66" parent="." instance=ExtResource("2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.50002, 0, 2.59796)
+q = -3
+r = 3
