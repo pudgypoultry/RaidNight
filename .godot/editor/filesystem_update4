@@ -1,8 +1,9 @@
 res://Scenes/TestingScene.tscn
+res://Scripts/HexBoard.gd
+res://Scenes/BasicHex.tscn
 res://Scenes/Characters/Ally.tscn
 res://Scenes/CreatedBoard.tscn
 res://Scenes/Characters/Enemy.tscn
 res://Scenes/MenuContainerTest.tscn
-res://Scenes/BasicHex.tscn
+res://Scenes/Example.gd
 res://Scripts/HexProperties.gd
-res://Scripts/TestingScene.gd

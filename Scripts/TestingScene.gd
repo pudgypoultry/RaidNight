@@ -18,7 +18,6 @@ const ORIGINAL_MATERIAL = preload("res://Materials/BasicHexMaterial.tres")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass
 	test_character.connect("character_selected",Callable(self,"handle_character_selected"))
 	test_enemy.connect("character_selected",Callable(self,"handle_character_selected"))
 	var current_tile

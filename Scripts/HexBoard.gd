@@ -1,5 +1,7 @@
 extends Node3D
 
+@export var hexScene : PackedScene
+
 const ORIGINAL_MATERIAL = preload("res://Materials/BasicHexMaterial.tres")
 const TEST_MATERIAL = preload("res://Materials/test_boy_material.tres")
 const TEST_MATERIAL_2 = preload("res://Materials/test_boy_material2.tres")
@@ -7,10 +9,46 @@ const TEST_MATERIAL_3 = preload("res://Materials/test_boy_material3.tres")
 const TEST_MATERIAL_4 = preload("res://Materials/test_boy_material4.tres")
 
 
+const TILE_SIZE = 1;
+const TILE_START_ROT = 30;
+const TILE_WIDTH = sqrt(3) * TILE_SIZE;
+const TILE_HEIGHT = 2 * TILE_SIZE;
+const TILE_OFFSET = 0.5 * TILE_WIDTH;
+const GRID_SIZE = 10;
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	# test_walking_range(0, 0, 0, 7, true)
-	pass
+	_generate_grid(GRID_SIZE);
+
+func _generate_grid(size) -> void:
+	var startingQ = 0;
+	var startingR = 0;
+	var startingS = 0;
+	
+	for x in range(size):
+		var curQ = x;
+		var curR = startingR;
+		var curS = startingS - x;
+		# FIX Q R S
+		for z in range(size):
+			var tile = hexScene.instantiate();
+			tile.q = curQ;
+			tile.r = curR;
+			tile.s = curS;
+			add_child(tile);
+			if x % 2 == 0:
+				tile.translate(Vector3( (TILE_WIDTH) * x, 0, (0.87 * TILE_HEIGHT + 0.25) * z));
+				print("Odd Tile");
+			else:
+				tile.translate(Vector3( (TILE_WIDTH) * x, 0, (0.87 * TILE_HEIGHT + 0.25) * z + TILE_OFFSET));
+				print("Even Tile");
+			curR += 1
+			curS -= 1
+			# await get_tree().create_timer(0.5).timeout
+		if x % 2 == 1:
+			startingR -= 1
+			startingS += 1
 
 # loops through each child hex of the board and returns the hex with the given q,r,s cube coordinates
 func get_tile(q, r, s):

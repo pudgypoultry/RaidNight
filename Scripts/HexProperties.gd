@@ -1,8 +1,10 @@
 extends Node3D
 
-@export var q := 0
-@export var r := 0
-@export var s := 0
+class_name Hexagon
+
+@export var q : int = 0
+@export var r : int = 0
+@export var s : int = 0
 
 @onready var raymond = $Raymond
 @onready var los_finder = $Raymundo
