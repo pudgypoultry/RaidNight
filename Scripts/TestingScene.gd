@@ -40,21 +40,23 @@ func handle_tile_clicked(current_tile):
 			last_selected_character.position = Vector3(current_tile.get_position().x, test_character.height_offset, current_tile.get_position().z)
 			last_selected_character.allowed_to_move = false
 			hex_grid.reset_board_color()
+			
 	"""
 	current_tile.raymond.force_raycast_update()
 	if current_tile.raymond.is_colliding():
 		if current_tile.raymond.get_collider().is_in_group("Enemies") && Input.is_action_just_pressed("left_mouse_click"):
 			handle_character_clicked(current_tile.raymond.get_collider())
 			return
+	"""
 	
 	if Input.is_action_just_pressed("left_mouse_click"):
 		if test_walking_options.has(current_tile):
 			var current_height = test_character.get_position().y
 			test_character.position = Vector3(current_tile.get_position().x, test_character.height_offset, current_tile.get_position().z)
 			test_walking_options = []
-			test_hexgrid.change_list_of_tile_colors(test_hexgrid.get_children(), ORIGINAL_MATERIAL)
+			hex_grid.change_list_of_tile_colors(hex_grid.get_children(), ORIGINAL_MATERIAL)
 			selecting_character = false
-	"""
+
 
 # Handles the subscribed signal from each character to know when its collider is clicked
 func handle_character_selected(current_character):

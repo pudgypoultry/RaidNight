@@ -7,3 +7,5 @@ res://Scenes/Characters/Enemy.tscn
 res://Scenes/MenuContainerTest.tscn
 res://Scenes/Example.gd
 res://Scripts/HexProperties.gd
+res://Scripts/TestingScene.gd
+res://Scripts/NewTestScene.gd

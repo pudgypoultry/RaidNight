@@ -1,5 +1,7 @@
 extends Node3D
 
+class_name HexBoard
+
 @export var hexScene : PackedScene
 
 const ORIGINAL_MATERIAL = preload("res://Materials/BasicHexMaterial.tres")
@@ -21,6 +23,7 @@ func _ready():
 	# test_walking_range(0, 0, 0, 7, true)
 	_generate_grid(GRID_SIZE);
 
+# Generates a square grid of size "size", sets Q, R, S coordinates for every tile
 func _generate_grid(size) -> void:
 	var startingQ = 0;
 	var startingR = 0;
@@ -45,10 +48,10 @@ func _generate_grid(size) -> void:
 				print("Even Tile");
 			curR += 1
 			curS -= 1
-			# await get_tree().create_timer(0.5).timeout
 		if x % 2 == 1:
 			startingR -= 1
 			startingS += 1
+
 
 # loops through each child hex of the board and returns the hex with the given q,r,s cube coordinates
 func get_tile(q, r, s):
