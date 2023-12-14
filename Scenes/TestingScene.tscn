@@ -14,9 +14,9 @@ ambient_light_color = Color(1, 1, 1, 1)
 
 [node name="Main" type="Node3D" node_paths=PackedStringArray("board")]
 script = ExtResource("1_ajfyd")
-board = NodePath("Test2")
+board = NodePath("CreatedBoard")
 
-[node name="CreatedBoard" parent="." instance=ExtResource("2")]
+[node name="OldCreatedBoard" parent="." instance=ExtResource("2")]
 visible = false
 hexScene = ExtResource("3_rvxsk")
 
@@ -38,6 +38,6 @@ script = ExtResource("5")
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_rrrfw")
 
-[node name="Test2" type="Node3D" parent="."]
+[node name="CreatedBoard" type="Node3D" parent="."]
 script = ExtResource("7_biukd")
 hexScene = ExtResource("3_rvxsk")
