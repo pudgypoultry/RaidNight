@@ -42,10 +42,10 @@ func _generate_grid(size) -> void:
 			add_child(tile);
 			if x % 2 == 0:
 				tile.translate(Vector3( (TILE_WIDTH) * x, 0, (0.87 * TILE_HEIGHT + 0.25) * z));
-				print("Odd Tile");
+				# print("Odd Tile");
 			else:
 				tile.translate(Vector3( (TILE_WIDTH) * x, 0, (0.87 * TILE_HEIGHT + 0.25) * z + TILE_OFFSET));
-				print("Even Tile");
+				# print("Even Tile");
 			curR += 1
 			curS -= 1
 		if x % 2 == 1:
@@ -69,22 +69,22 @@ func get_adjacent(q, r, s, do_obstructions_matter):
 	var return_array = []
 	
 	if do_obstructions_matter:
-		if get_tile(q+1, r-1, s) && !get_tile(q+1, r-1, s).raymond.is_colliding():
+		if get_tile(q+1, r-1, s) && !get_tile(q+1, r-1, s).obstructed:
 			get_tile(q+1, r-1, s).raymond.force_raycast_update()
 			return_array.append(get_tile(q+1, r-1, s))
-		if get_tile(q-1, r+1, s) && !get_tile(q-1, r+1, s).raymond.is_colliding():
+		if get_tile(q-1, r+1, s) && !get_tile(q-1, r+1, s).obstructed:
 			get_tile(q-1, r+1, s).raymond.force_raycast_update()
 			return_array.append(get_tile(q-1, r+1, s))
-		if get_tile(q, r+1, s-1) && !get_tile(q, r+1, s-1).raymond.is_colliding():
+		if get_tile(q, r+1, s-1) && !get_tile(q, r+1, s-1).obstructed:
 			get_tile(q, r+1, s-1).raymond.force_raycast_update()
 			return_array.append(get_tile(q, r+1, s-1))
-		if get_tile(q, r-1, s+1) && !get_tile(q, r-1, s+1).raymond.is_colliding():
+		if get_tile(q, r-1, s+1) && !get_tile(q, r-1, s+1).obstructed:
 			get_tile(q, r-1, s+1).raymond.force_raycast_update()
 			return_array.append(get_tile(q, r-1, s+1))
-		if get_tile(q-1, r, s+1) && !get_tile(q-1, r, s+1).raymond.is_colliding():
+		if get_tile(q-1, r, s+1) && !get_tile(q-1, r, s+1).obstructed:
 			get_tile(q-1, r, s+1).raymond.force_raycast_update()
 			return_array.append(get_tile(q-1, r, s+1))
-		if get_tile(q+1, r, s-1) && !get_tile(q+1, r, s-1).raymond.is_colliding():
+		if get_tile(q+1, r, s-1) && !get_tile(q+1, r, s-1).obstructed:
 			get_tile(q+1, r, s-1).raymond.force_raycast_update()
 			return_array.append(get_tile(q+1, r, s-1))
 	

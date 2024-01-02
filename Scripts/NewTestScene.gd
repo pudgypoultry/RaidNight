@@ -20,7 +20,9 @@ func _process(delta):
 func handle_tile_clicked():
 
 	if Input.is_action_just_pressed("left_mouse_click"):
-
+		for tile in hexBoard.get_children():
+			if tile is Hexagon:
+				tile.update_obstruction()
 		for tile in hexBoard.get_children():
 			if tile is Hexagon:
 				if tile.mouse_in == true:
